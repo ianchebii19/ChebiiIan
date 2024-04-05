@@ -1,212 +1,189 @@
-
-@media screen and (max-width: 500px) {body{
-  top: 0;
-  left: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  color: aliceblue;
- background-color: #1a3b5a;
-
- 
-}
-#portfolio{
-  margin: 20px;
- }
- }
- .header {
-display: flex;
-  background-color:  #051e33;
-  overflow: hidden;
- top: 0;
- left: 0;
- right: 0;
-position: fixed;
-
-}
-.logo{
-  padding: 17px 0px;
-}
-
-.navbar a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: right;
-  justify-content: right;
-  padding: 17px 3px;
-  text-decoration: none;
-
-}
-
-
-.navbar a:hover {
- 
- 
-  background-color: aqua;
-  color: rgb(1, 12, 12);
-}
-span{
-  color: aqua;
- 
-}
-section{
-  margin-top: 100px;
-  margin-left: 10px;
-
-}
-
-
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 600px) {
   body{
-    top: 0;
-    left: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    color: aliceblue;
-   background-color: #1a3b5a;
-  
-}
-  
-   .header {
-  display: flex;
-    background-color:  #051e33;
-    overflow: hidden;
-   top: 0;
-   left: 0;
-   right: 0;
-  position: fixed;
-  
-  }
-  .logo{
-    padding: 17px 5px;
-  }
-  .navbar {
-
-    overflow: hidden;
-    text-align: right; /* Aligning the navbar to the right */
-  }
-  .navbar {
-  
-    overflow: hidden;
-    text-align: right; /* Aligning the navbar to the right */
-  }
-  .navbar a {
-    float: left;
-    display: block;
+    background-color: rgb(2, 17, 6);
     color: #f2f2f2;
-    text-align: right;
-    justify-content: right;
-    padding: 16px 20px;
-    text-decoration: none;
+  }
+  .header{
+    height: 50px;
+      top: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      width: 100%;
+      position: absolute;
+      color: rgb(194, 245, 10);
+      background-color:rgb(10, 46, 5);
 
   }
-
-
-  .navbar a:hover {
-   
-   
-    background-color: aqua;
-    color: rgb(1, 12, 12);
+  #sidebar{
+      display: none;
   }
-  span{
-    color: aqua;
-    font-size: 1.15rem;
+  .sidebar .service{
+      display: none;
   }
-  section{
-    margin-top: 80px;
-    width :70%;
-    margin-left: 50px;
-}
-h1{
-  font-size: 1.9rem;
-}
-#portfolio{
-  margin: 100px;
- }
- }
-
-
-  
-@media screen and (min-width: 700px) {
-
-body{
-  
-  font-family: Arial, Helvetica, sans-serif;
-  color: aliceblue;
-  font-size: 1.3rem;
-  background-color: #1a3b5a;}
- 
-
-  .logo{
-    padding: 14px 100px;
-    font-size: 1.2;
+  .logo {
+      padding: 10px;
+      font-size: 1.5rem;
+      padding-left: 30px;
+      margin-right: 100px;
+      font-weight: 700;
   }
-  .header {
-    display: flex;
-      background-color:  #051e33;
+  .navbar {
+      justify-content: right;
       overflow: hidden;
-     top: 0;
-     left: 0;
-     right: 0;
-    position: fixed;
-    width: 100%;
-    z-index: 100;
+     display: flex;
+     
+      padding: 10px;
+     
+    }
     
+    .navbar a {
+      justify-content: flex-end;
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 10px;
+      text-decoration: none;
+      font-size: 1.3rem;
+      align-items: flex-end;
     }
-    .navbar {
+    
+    .navbar a:hover {
+      color:  rgb(194, 245, 10);
+    }
+  
+    /* Menu bar styling */
+    .menuIco {
+      display: none;}
+    .content {
+      display: none;
+      padding-top: 30px;
+      margin: 0 100px;
+    }
+    h1{
+      font-size: 1.9rem;
+    }
+    #portfolio{
+      margin: 100px;
+     }
+     }
 
-      overflow: hidden;
-      text-align: right; 
-    }
-  .navbar a {
-    float: left;
-    display: block;
+
+@media only screen and (max-width: 600px) {
+  .content{
+    margin: 10px;
+  }
+  .header{
+      top: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      width: 100%;
+      position: absolute;
+      color:  rgb(194, 245, 10);
+      background-color:rgb(10, 46, 5);
+      border-radius: 2px;
+
+
+  }
+  body{
+    background-color: rgb(2, 17, 6);
+    font-family: Arial, Helvetica, sans-serif;
     color: #f2f2f2;
-    text-align: right;
-    justify-content: right;
-    padding: 16px 20px;
-    text-decoration: none;
+  }
+  .logo {
+      padding: 10px;
+      font-size: 1.5rem;
+      padding-left: 25px;
+      font-weight: 700;
+  }
+  .menuIco  {
+      color: rgb(194, 245, 10);
+      display: block;
+      cursor: pointer;
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      padding: 10px;
+      transform: translateY(-50%);
+      font-size: 20px;
+    }
+    #bxa{
+      display: none;
+      font-weight: 600;
+      font-size: 1.7rem;
+    }
+  .navbar{
+     display: none;
+  }
+  .sidebar {
+   display: none;
+   right: 0;
+   top: 0;
+   position: absolute;
+     margin-top: 46px;
+      height: 150px;
+      width: 200px;
+      z-index: 999;
+      background-color:rgb(51, 104, 44);
+      flex-direction: column;
+      overflow: hidden;
+      align-items: center;
+      border-radius:8px ;
+    }
+      
+     
+  .sidebar a{
+     left: 0;
+      text-decoration: none;
+      color: aliceblue;
+      font-size: 1.2rem;
+      display: block;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 7px;
+      padding-left: 17px;
+      }}
+      .sidebar a:hover{
+        color:  rgb(194, 245, 10);
+      }
 
-  }
-
-  .navbar a:hover {
-   
-    background-color: aqua;
-    color: rgb(1, 12, 12);
-  }
-
- 
-  .content {
-    display: none;
-  }
-
-  .content.active {
-    display: block;
-  }
-  span{
-    color: aqua;
-    font-size: 1.7rem;
-  }
-  section{
-    margin-top: 100px;
-    width :60%;
-    margin-left: 70px;
-}
-h1{
-  font-size: 1.9rem;
-}
-#portfolio{
- margin: 100px;
-}
-}
+      
 .content {
   display: none;
+  padding-top: 30px;
+  
 }
 
 .content.active {
   display: block;
+  
 }
+.introduction{
+display: flex;
+width: 100%;
+}
+.intro{
+  width: 80%;
+}
+.ianImage{
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.intro2{
+  width: 20%;
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
 .word{
-  padding-top: 10px;
-  color: aqua;
+  padding-top: 7px;
+  color: rgb(194, 245, 10);
   transform: rotateX(90deg);
   transition: transform 0.5s cubic-bezier(0.6, 0, 0.7, 0.2);
   display: block;
@@ -223,8 +200,8 @@ h1{
 .hire{
 
   padding: 10px;
-  background-color: #102229;
-  color: #03e9f4;
+  background-color:rgb(10, 46, 5);
+  color:   rgb(194, 245, 10);
   font-weight: bold;
   border: none;
   border-radius: 5px;
@@ -236,13 +213,14 @@ h1{
 }
 
 .hire:hover{
-    background: #03e9f4;
+    background:  rgb(194, 245, 10);
     color: #050801;
-    box-shadow: 0 0 5px #03e9f4,
-                0 0 25px #03e9f4,
-                0 0 50px #03e9f4,
-                0 0 200px #03e9f4;
-     -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+    box-shadow: 0 0 5px rgb(194, 245, 10),
+    0 0 25px  rgb(194, 245, 10),
+    0 0 50px  rgb(194, 245, 10),
+    0 0 200px  rgb(194, 245, 10);
+-webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+
 }
 .socialIcons {
   position: relative;
@@ -261,12 +239,12 @@ h1{
   align-items: center;
   width: 50px;
   height: 50px;
-  background: linear-gradient(to right, aqua 50%, transparent 50%);
+  background: linear-gradient(to right,   rgb(194, 245, 10) 50%, transparent 50%);
   background-size: 200% 100%;
   background-position: right bottom;
-  border: 2px solid aqua;
+  border: 2px solid   rgb(194, 245, 10);
   border-radius: 50%;
-  color: aqua;
+  color:  rgb(194, 245, 10);
   text-decoration: none;
   transition: .7s;
   overflow: hidden;

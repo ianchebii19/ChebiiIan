@@ -1,3 +1,35 @@
+function handleMenuIconClick() {
+  const menuIcon = document.querySelector('.menuIcon');
+  const sidebar = document.querySelector('.sidebar');
+  const bxa = document.querySelector('#bxa');
+  const far = document.querySelector('#far');
+  
+  menuIcon.addEventListener('click', function() {
+    sidebar.style.display = 'block';
+    bxa.style.display = 'block';
+    far.style.display = 'none';
+  });
+}
+
+function handleBxaClick() {
+  const menuIcon = document.querySelector('.menuIcon');
+  const bxa = document.querySelector('#bxa');
+  const far = document.querySelector('#far');
+  const sidebar = document.querySelector('.sidebar');
+  const bxaa = document.querySelector('.bxaa');
+  
+  bxa.addEventListener('click', function() {
+    far.style.display = 'block';
+    sidebar.style.display = 'none';
+    bxa.style.display = 'none';
+
+  });
+}
+handleMenuIconClick();
+  handleBxaClick();
+
+
+
 function toggleContent(id) {
   var contents = document.getElementsByClassName("content");
   for (var i = 0; i < contents.length; i++) {

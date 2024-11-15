@@ -1,0 +1,74 @@
+{%extends 'papp/base.html' %}
+{% load static %}
+{% block title%} Team {% endblock title %}
+{% block main%} 
+<main class="main">
+    
+    
+    <section id="team" class="team section">
+
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Team</h2>
+          <p>Kickstart, boost, and sustain your business with our expert teams</p>
+        </div><!-- End Section Title -->
+  
+        <div class="container">
+  
+          <div class="row gy-4">
+  
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="team-member d-flex align-items-start">
+                <div class="pic"><img src="{% static 'assets/img/IMG-20240923-WA0042.jpg' %}" class="img-fluid" alt=""></div>
+                <div class="member-info">
+                  <h4>William Agumba</h4>
+                  <span>Chief Executive Officer</span>
+                  <p>Provides strategic leadership, driving innovation, growth, and profitability. Setting long-term goals, oversee technology initiatives, and align business strategies with market trends. </p>
+                 
+                </div>
+              </div>
+            </div><!-- End Team Member -->
+  
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="team-member d-flex align-items-start">
+                <div class="pic"><img src="{% static 'assets/img/ux.PNG' %}" class="img-fluid" alt=""></div>
+                <div class="member-info">
+                  <h4>Sarah Kiben</h4>
+                  <span>React Framework Expert </span>
+                  <p>Specializes in building dynamic, high-performance web applications using React to develop reusable components, optimize rendering, and manage state effectively. </p>
+                  
+                </div>
+              </div>
+            </div><!-- End Team Member -->
+  
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="team-member d-flex align-items-start">
+                <div class="pic"><img src="{% static 'assets/img/ianpic.png' %}" class="img-fluid" alt=""></div>
+                <div class="member-info">
+                  <h4>Ian Chebii</h4>
+                  <span>Django Expert</span>
+                  <p>Responsible for building and maintaining Django-based web applications, API design and development to security, performance optimization, and integration with front-end or mobile applications</p>
+                  
+                </div>
+              </div>
+            </div><!-- End Team Member -->
+  
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+              <div class="team-member d-flex align-items-start">
+                <div class="pic"><img src="{% static 'assets/img/frank.PNG' %}" class="img-fluid" alt=""></div>
+                <div class="member-info">
+                  <h4>Fransis Mungai</h4>
+                  <span>UI/UX Manager</span>
+                  <p>Managing the user interface design of  websites, applications and software products. Collaborating with stakeholders to enhance user experience while aligning design with business goals and technical requirements.</p>
+                  
+                </div>
+              </div>
+            </div><!-- End Team Member -->
+  
+          </div>
+  
+        </div>
+  
+      </section>
+</main>
+{% endblock main %}

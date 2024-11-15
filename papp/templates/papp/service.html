@@ -1,0 +1,82 @@
+{%extends 'papp/base.html' %}
+{% load static %}
+{% block title%} Service {% endblock title %}
+{% block main%} 
+<main class="main">
+    <section id="services" class="services section light-background">
+
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Services</h2>
+          <p>Elevate Your Business with Our Innovative Solutions</p>
+        </div><!-- End Section Title -->
+  
+        <div class="container">
+  
+          <div class="row gy-4">
+  
+            <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+              <div class="service-item position-relative">
+                <div class="icon"><i class="bi bi-activity icon"></i></div>
+                <h4><a href="" class="stretched-link">Software Development</a></h4>
+                <p>We offer comprehensive software solutions, including custom application development, cloud integration, and data analytics. Our focus is on delivering innovative, user-friendly, and efficient systems for businesses.</p>
+              </div>
+            </div><!-- End Service Item -->
+  
+            <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+              <div class="service-item position-relative">
+                <div class="icon"><i class="bi bi-bounding-box-circles icon"></i></div>
+                <h4><a href="" class="stretched-link"> Web Development</a></h4>
+                <p>Count on us for innovative web solutions. Our skilled Backend and Frontend Developers create tailored, modern, and user-friendly applications. We guarantee quality, innovation, and customer satisfaction</p>
+              </div>
+            </div><!-- End Service Item -->
+  
+            <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+              <div class="service-item position-relative">
+                <div class="icon"><i class="bi bi-calendar4-week icon"></i></div>
+                <h4><a href="" class="stretched-link">UX/UI</a></h4>
+                <p>We offer comprehensive UI/UX design services, including user research, wireframing, prototyping, and usability testing. Our team creates visually appealing, intuitive interfaces that enhance user engagement and satisfaction.</p>
+              </div>
+            </div><!-- End Service Item -->
+  
+            <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
+              <div class="service-item position-relative">
+                <div class="icon"><i class="bi bi-broadcast icon"></i></div>
+                <h4><a href="" class="stretched-link">IT Consulting</a></h4>
+                <p>
+                  Our role is to help companies manage their technology usage. This includes assessing various aspects of their IT systems, such as software performance and cybersecurity
+                </p> 
+               </div>
+            </div><!-- End Service Item -->
+  
+          </div>
+  
+        </div>
+  
+      </section><!-- /Services Section -->
+  
+      <!-- Call To Action Section -->
+      <section id="call-to-action" class="call-to-action section dark-background">
+  
+        <img src="assets/img/cta-bg.jpg" alt="">
+  
+        <div class="container">
+  
+          <div class="row" data-aos="zoom-in" data-aos-delay="100">
+            <div class="col-xl-9 text-center text-xl-start">
+              <h3>Call To Action</h3>
+              <p>
+                Looking for a premier software development company in Kenya and beyond? Your search ends here. CoreTech Solutions embodies innovation, excellence, and client satisfaction. Based in Nairobi, we are at the forefront of technology, providing advanced software development services that elevate businesses to new heights.
+              </p>
+            </div>
+            <div class="col-xl-3 cta-btn-container text-center">
+              <a class="cta-btn align-middle" href="{% url 'contact' %}">Call To Action</a>
+            </div>
+          </div>
+  
+        </div>
+  
+    </section>
+</main>
+{% endblock main %}
+

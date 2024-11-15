@@ -1,0 +1,78 @@
+{%extends 'papp/base.html' %}
+{% load static %}
+{% block title%} Portfolio {% endblock title %}
+{% block main%} 
+<main class="main">
+  <section id="portfolio" class="portfolio section">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Portfolio</h2>
+      <p> We are design partner to help take your business to the next level.</p>
+    </div><!-- End Section Title -->
+
+    <div class="container">
+  
+      <div class="row gy-4">
+
+      
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+          <img class="book" src="{% static 'assets/img/learn.webp' %}" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Elearning Management System</h4>
+        <a href="https://github.com/ianchebii19/dataapp.git" target="_blank">
+          <p  style="cursor: pointer; color: rgb(38, 133, 241);">Learn More <i class="bi bi-chevron-right"></i></p>
+        </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+          <img class="book" src="{% static 'assets/img/aaaa.jpg' %}" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Ecomerce Store</h4>
+            <a href="https://kemoi.pythonanywhere.com/" target="_blank">
+              <p  style="cursor: pointer; color: rgb(38, 133, 241);">Learn More <i class="bi bi-chevron-right"></i></p>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+          <img class="book" src="{% static 'assets/img/reel.jpg' %}" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>RealEstate</h4>
+            <a href="https://github.com/ianchebii19/realestate.git" target="_blank">
+              <p  style="cursor: pointer; color: rgb(38, 133, 241);">Learn More <i class="bi bi-chevron-right"></i></p>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+          <img class="book" src="{% static 'assets/img/hos.webp' %}" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Hospital Appointment system</h4>
+            <a href="https://github.com/ianchebii19/carepulse.git" target="_blank">
+              <p  style="cursor: pointer; color: rgb(38, 133, 241);">Learn More <i class="bi bi-chevron-right"></i></p>
+            </a>
+          </div>
+
+          
+          
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+          <img class="book" src="{% static 'assets/img/book.jpg' %}" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Hotel Booking App</h4>
+            <a href="https://github.com/ianchebii19/Camping-site.git" target="_blank">
+              <p  style="cursor: pointer; color: rgb(38, 133, 241);">Learn More <i class="bi bi-chevron-right"></i></p>
+            </a>
+          </div>
+
+          
+          
+        </div>
+        </div>
+
+    </div>
+    
+
+  </section>
+</main>
+{% endblock main %}

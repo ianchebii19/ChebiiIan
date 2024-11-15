@@ -1,0 +1,72 @@
+{%extends 'papp/base.html' %}
+{% load static %}
+{% block title%} Contact {% endblock title %}
+{% load crispy_forms_tags %}
+
+{% block main%} 
+<main class="main">
+    <section id="contact" class="contact section">
+
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Contact</h2>
+          <p>Let’s level up your project, together</p>
+        </div><!-- End Section Title -->
+  
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+  
+          <div class="row gy-4">
+  
+            <div class="col-lg-5">
+  
+              <div class="info-wrap">
+                <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                  <i class="bi bi-geo-alt flex-shrink-0"></i>
+                  <div>
+                    <h3>Address</h3>
+                    <p>Bazerh 21, Moi Avenue Nairobi</p>
+                  </div>
+                </div><!-- End Info Item -->
+  
+                <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                  <i class="bi bi-telephone flex-shrink-0"></i>
+                  <div>
+                    <h3>Call Us</h3>
+                    <p>+254720116927/+254741259140</p>
+                  </div>
+                </div>
+                <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                  <i class="bi bi-telephone flex-shrink-0"></i>
+                  <div>
+                    <h3>WhatsApp Us</h3>
+                    <p>+254720116927</p>
+                  </div>
+                </div><!-- End Info Item -->
+  
+                <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                  <i class="bi bi-envelope flex-shrink-0"></i>
+                  <div>
+                    <h3>Email Us</h3>
+                    <p>cortech.developers@gmail.com</p>
+                  </div>
+                </div><!-- End Info Item -->
+  
+                 </div>
+            </div>
+  
+            <div class="col-lg-7">
+              <form style="" method="POST">
+                {% csrf_token %}
+               
+                {{ form|crispy }}
+                <button class="bato" type="submit">Send Message</button>
+            </form>
+            </div><!-- End Contact Form -->
+  
+          </div>
+  
+        </div>
+  
+      </section>
+</main>
+{% endblock main %}
